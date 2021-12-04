@@ -14,38 +14,36 @@ Backend:
   - It is open for third party vendors to add additional features.
  
 Database:
-  - Login database:             
-      It is a separate database with 'login' table for storing the login credentials details of the customers.
+  -  Register table:             
+      For storing the details of the customers.
       The table contains the following columns:   
-                1. username: primary key, unique varchar(10)    
-                2. pwd: varchar
+                1. Username: primary key, unique varchar(45)    
+                2. Password: varchar(45)
+                3. Birthday:date
+                4. CellPhone:varchar(45)
+                5. Email:varchar(45)
+                6. address:varchar(45)
       
-  - Catalogue database:           
-      It has the following tables:           
-                   'Restaurants' table which has the details of various available restuarants that one can order from, with the following columns:     
-                                        1. restaurant_id: int,primary key, unique, not null     
-                                        2. restaurant_name: varchar(20), unique, not null          
-                                        3. veg/non-veg: char(1),not null      
-                                        4. city: varchar(20)    
-                                        5. image (link to the image)            
-                   Menu tables for each restaurant named restaurant_id_menu with the following columns in each menu table:         
-                                        1. item_id: int,primary key,unique, not null       
-                                        2. item_name: varchar(20)        
-                                        3. veg/non-veg: char(1)      
-                                        4. price: int     
-                                        5. image (link to the image)          
-                                        
-  - Order database    
-          It contains all the orders received so the any particular restaurant can filter out the orders that their restaurant received.
-          It has a table 'Orders' with the following columns:                 
-                  1. item_name: varchar(20)        
-                  2. restaurant_name: varchar(20)            
-                  3. price: int         
-                  4. no_of_servings: int          
-                  5. username: varchar(20)            
-     
-   - Profile database
- 
+  -  Manager Table:
+                1.ManagerName:varchar(45)
+                2.ManagerPassword:varchar(45)
+  -  Menu Table:
+                1.FoodID:int(11),primary key
+                2.FoodName:varchar(45)
+                3.FoodPrice:bigint(4)
+                4.Description:varchar(255)
+                5.Comment:varchar(255)
+                6.1Star:int(11)
+                7.2Star:int(11)
+                8.3Star:int(11)
+                9.4Star:int(11)
+                10.5Star:int(11)
+   - OrderFood Table:
+                1.UserName:varchar(45),primary key
+                2.Orders:varchar(45)
+               
+      
+                 
 
  Overview:    
  The project is a food ordering system (Desktop Window) for custumers to place online delivery orders. Customers can have a look at various restaurants' menu and order food from their desired restaurant.                  
