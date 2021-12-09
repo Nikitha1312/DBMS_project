@@ -1,8 +1,9 @@
 Frontend:
-  -Start Page: 
+
+   -Start Page: 
         This page has the following options:
-        1.Registered Customer : which will take user to the Customer Login Page, where existing can login into their account and new customers can sign up.
-        2.Manager : which will take user to manager login page , where manager can login and access the manager access page.
+        1.Registered Customer : which will take user to the Customer Login Page, where existing can login into their account and new customers can sign up.  
+        2.Manager : which will take user to manager login page , where manager can login and access the manager access page.    
         3.Surfer : which will take user to the Retrieve page and will allow user to view the food items. 
         4.Review : which will allow the customer give their review on the food items.  
   - Menu page:         
