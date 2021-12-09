@@ -1,13 +1,17 @@
 Frontend:
-  - Login page:    
-        In this page the user can login into their account if they are existing customer or sign up if new customer.
-  - Catalogue page:       
-        This page lists out all the available restaurants from which the user can choose. It also has options that can filter out restaurants based on preferences like veg, non-veg or city.
-  - Menu pages for each restaurant:         
-        On choosing a particular restaurant to order from the user can choose the desired items from the menu.
-  - A local array to store the selected items from the menu and displaying the bill:        
-        This array will store the selected items, acts like a cart and the bill is displayed towards the end.
-  - Connecting these pages to various databases using db connectors
+  -Start Page: 
+        This page has the following options:
+        1.Registered Customer : which will take user to the Customer Login Page, where existing can login into their account and new customers can sign up.
+        2.Manager : which will take user to manager login page , where manager can login and access the manager access page.
+        3.Surfer : which will take user to the Retrieve page and will allow user to view the food items. 
+        4.Review : which will allow the customer give their review on the food items.  
+  - Menu page:         
+        The user can choose the desired items from the menu and final cost is displayed at the rightmost corner and at the bottom of the page the ordered items along with
+        quantity is displayed.
+  - Deposit page:
+        This page is the payment page.     
+ 
+  - Connecting these pages to Restaurant database using db connectors.
 
 Backend: 
 
