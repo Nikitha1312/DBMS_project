@@ -157,21 +157,21 @@ public class FoodMenu implements ItemListener {
 		btnPayBalance.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				 try{
-		                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+		                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 		                Statement mySt =myConn.createStatement();
 		                String sql= "UPDATE `Restaurant`.`OrderFood` "
 		                		+ "SET `Orders`='"+(lblOrder.getText())+"' WHERE `UserName`= '"+txtEnterUsername.getText()+"'";
 	        			
 	                    mySt.executeUpdate(sql);
 	                    try{
-			                Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+			                Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 			                Statement St =Conn.createStatement();
 			                String sql1= "UPDATE `Restaurant`.`Register` "
 			                		+ "SET `Deposit`=`Deposit`-'"+(lbltotalFood.getText())+"' WHERE `UserName`= '"+txtEnterUsername.getText()+"'";
 		        			
 		                    St.executeUpdate(sql1);
 		                    try{
-				                Connection SpentConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+				                Connection SpentConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 				                Statement SpentSt =SpentConn.createStatement();
 				                String SpentSql= "UPDATE `Restaurant`.`Register` "
 				                		+ "SET `Spent`=`Spent`+'"+(lbltotalFood.getText())+"' WHERE `UserName`= '"+txtEnterUsername.getText()+"'";
