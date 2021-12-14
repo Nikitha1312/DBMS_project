@@ -1378,26 +1378,6 @@ public class FoodMenu implements ItemListener {
 				lblQtyFL.setBounds(877, 527, 61, 16);
 				FoodMenu.getContentPane().add(lblQtyFL);
 				
-				
-				JLabel lblLogo = new JLabel("");
-				int widthLG=204,heightLG=125;
-				ImageIcon imageLG = new ImageIcon("src/Pictures/AsianFlavors.png");
-		        imageLG.setImage(imageLG.getImage().getScaledInstance(widthLG,heightLG,Image.SCALE_DEFAULT));
-		        lblLogo.setIcon(imageLG);
-		        lblLogo.setSize(widthLG,heightLG);
-				lblLogo.setBounds(1060, 110, 204, 125);
-				FoodMenu.getContentPane().add(lblLogo);
-				
-				JLabel lblLogo1 = new JLabel("");
-				int widthLG1=204,heightLG1=125;
-				ImageIcon imageLG1 = new ImageIcon("src/Pictures/NewAsia.jpg");
-		        imageLG1.setImage(imageLG1.getImage().getScaledInstance(widthLG1,heightLG1,Image.SCALE_DEFAULT));
-		        lblLogo1.setIcon(imageLG1);
-		        lblLogo1.setSize(widthLG1,heightLG1);
-				lblLogo1.setBounds(1060, 300, 204, 125);
-				FoodMenu.getContentPane().add(lblLogo1);
-
-				
 				JLabel lblBackground = new JLabel("Enter Your UserName");
 				int widthBG=1500,heightBG=1500;
 				ImageIcon imageBG = new ImageIcon("C:\\Users\\Clg\\Downloads\\Dbms_project\\Pictures\\blue.jpg");
