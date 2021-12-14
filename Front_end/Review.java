@@ -52,7 +52,7 @@ public class Review {
 			public void actionPerformed(ActionEvent e) {
 
 	            try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt = myConn.createStatement();
 	                ResultSet myRs = mySt.executeQuery("select * from Menu where FoodName = '"+textFieldName.getText()+"'");
 	                if(myRs.next()){
@@ -97,7 +97,7 @@ public class Review {
 		btnStar1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt =myConn.createStatement();
 	                String sql1= "UPDATE `Restaurant`.`Menu` "
 	                		+ "SET `1Star`=`1Star`+1 WHERE `FoodName`= '"+textFieldName.getText()+"'";
@@ -120,7 +120,7 @@ public class Review {
 		btnStar2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt =myConn.createStatement();
 	                String sql2= "UPDATE `Restaurant`.`Menu` "
 	                		+ "SET `2Star`=`2Star`+1 WHERE `FoodName`= '"+textFieldName.getText()+"'";
@@ -143,7 +143,7 @@ public class Review {
 		btnStar3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt =myConn.createStatement();
 	                String sql3= "UPDATE `Restaurant`.`Menu` "
 	                		+ "SET `3Star`=`3Star`+1 WHERE `FoodName`= '"+textFieldName.getText()+"'";
@@ -166,7 +166,7 @@ public class Review {
 		btnStar4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt =myConn.createStatement();
 	                String sql4= "UPDATE `Restaurant`.`Menu` "
 	                		+ "SET `4Star`=`4Star`+1 WHERE `FoodName`= '"+textFieldName.getText()+"'";
@@ -190,7 +190,7 @@ public class Review {
 		btnStar5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt =myConn.createStatement();
 	                String sql5= "UPDATE `Restaurant`.`Menu` "
 	                		+ "SET `5Star`=`5Star`+1 WHERE `FoodName`= '"+textFieldName.getText()+"'";
@@ -218,7 +218,7 @@ public class Review {
 		btnComment.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt =myConn.createStatement();
 	                String sql6= "UPDATE `Restaurant`.`Menu` "
 	                		+ "SET `Comment`='"+(textFieldComment.getText())+"' WHERE `FoodName`= '"+textFieldName.getText()+"'";
