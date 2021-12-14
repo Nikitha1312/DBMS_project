@@ -70,7 +70,7 @@ public class Retrieve {
 			public void actionPerformed(ActionEvent e) {
 
 	            try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt = myConn.createStatement();
 	                ResultSet myRs = mySt.executeQuery("select * from menu where FoodID = '"+textFieldNumber.getText()+"'");
 	                if(myRs.next()){
