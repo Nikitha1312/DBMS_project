@@ -16,8 +16,8 @@
            On choosing this option,if the user is already a registered customer then he/she will login using login credentials
            and then it will be directed to the menu page where the user can choose the food items they wish to order and pay.
            In the menu page, we have an option called deposit which will direct the user to the deposit page where the user can
-           deposit a certain amount to their account. When the user clicks the "pay balance" button in the menu page,the cost of the order 
-           will be deducted from deposited amount.This eases the process of ordering as the user need not to enter the bank credentials everytime
+           deposit a certain amount to their account. When the user clicks the "paybalance" button in the menu page,the cost of the order 
+           will be deducted from deposited amount.This eases the process of ordering as the user need not to enter the bank credentials everytime when
            they order.   
            If the user is a new customer they have to signup and enter their details to create their account.  
     2. Manager:   
