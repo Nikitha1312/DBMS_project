@@ -104,7 +104,7 @@ public  class Register {
 			public void actionPerformed(ActionEvent e) {
         		String url="jdbc:mysql://localhost:3306/Restaurant";
         		String user="root";
-        		String password="Nikki@999";
+        		String password="password";
             		 
                 	try {
                     Connection myConn = DriverManager.getConnection(url, user, password);
