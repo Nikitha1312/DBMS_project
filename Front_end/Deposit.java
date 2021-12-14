@@ -97,7 +97,7 @@ public class Deposit {
 		btnConfirm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                Statement mySt =myConn.createStatement();
 	                String sql= "UPDATE `Restaurant`.`Register` "
 	                		+ "SET `Deposit`=`Deposit`+'"+(textFieldAmount.getText())+"' WHERE `UserName`= '"+textFieldUserName.getText()+"'";
