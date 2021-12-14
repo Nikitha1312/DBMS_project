@@ -93,7 +93,7 @@ public class ManagerLogin implements ActionListener{
     	
     	String url="jdbc:mysql://localhost:3306/Restaurant";
 		String user="root";
-		String password="Nikki@999";
+		String password="password";
 		String cmd=e.getActionCommand();
         if(cmd.equals("Login")) {
         	
