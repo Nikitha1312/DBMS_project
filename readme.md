@@ -25,7 +25,7 @@ https://github.com/Nikitha1312/DBMS_project/tree/main/Documentation
       7.Retrieve page  
       8.Review page  
       9.StartPage   
-2.Execute the start class using "java StartPage" which will open the start page window where the user is given a choice 
+ 2.Execute the start class using "java StartPage" which will open the start page window where the user is given a choice 
  to choose from the following:  
     1. Login:   
            On choosing this option,if the user is already a registered customer then he/she will login using login credentials
