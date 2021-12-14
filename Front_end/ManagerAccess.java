@@ -88,7 +88,7 @@ public class ManagerAccess {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                String query="SELECT *FROM Register";
 	                PreparedStatement myPst = myConn.prepareStatement(query);
 	                ResultSet myRs = myPst.executeQuery();
@@ -117,7 +117,7 @@ public class ManagerAccess {
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				 try{
-		                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+		                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 		                String sql="DELETE FROM  Register where UserName = '"+textFieldUserName.getText()+"'";
 		                PreparedStatement myPst = myConn.prepareStatement(sql);
 		                myPst.execute();
@@ -145,7 +145,7 @@ public class ManagerAccess {
 		btnShowOrder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                String query="SELECT *FROM OrderFood";
 	                PreparedStatement myPst = myConn.prepareStatement(query);
 	                ResultSet myRs = myPst.executeQuery();
@@ -168,7 +168,7 @@ public class ManagerAccess {
 		btnDelivery.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                String sql="DELETE FROM  OrderFood where UserName = '"+textFieldUN.getText()+"'";
 	                PreparedStatement myPst = myConn.prepareStatement(sql);
 	                myPst.execute();
@@ -198,7 +198,7 @@ public class ManagerAccess {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try{
-	                Connection ReviewConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+	                Connection ReviewConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 	                String ReviewQuery="SELECT *FROM Menu";
 	                PreparedStatement ReviewPst = ReviewConn.prepareStatement(ReviewQuery);
 	                ResultSet ReviewRs = ReviewPst.executeQuery();
