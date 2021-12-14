@@ -42,7 +42,9 @@ https://github.com/Nikitha1312/DBMS_project/tree/main/Documentation
            On choosing this button it will direct to "Retrieve Page" where user can view the dishes available on the menu and on entering the
            corresponding FoodID the details like Foodname,price and description are displayed.   
     4. Review:   
-           By selecting this button it will take us to the "Review Page" where the user has enter the foodname and gives review accordingly.
+           By selecting this button it will take us to the "Review Page" where the user has enter the foodname and gives review accordingly.   
+
+We have one database called restaurant which has four tables register, Menu, OrderFood and Manager. 
            
 
 
