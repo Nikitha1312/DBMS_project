@@ -109,7 +109,7 @@ public CustomerLogin() {
     	
     	String url="jdbc:mysql://localhost:3306/Restaurant";
 		String user="root";
-		String password="Nikki@999";
+		String password="password";
 		String cmd=e.getActionCommand();
         if(cmd.equals("Login")) {
         	
@@ -126,7 +126,7 @@ public CustomerLogin() {
                
                 if(myRs.next()){
                 	try{
-		                Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","Nikki@999");
+		                Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurant","root","password");
 		                
 		                String sql1= "INSERT INTO `Restaurant`.`OrderFood`" 
 	        					+"(`UserName`)"
